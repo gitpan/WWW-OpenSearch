@@ -1,0 +1,20 @@
+WWW::OpenSearch
+
+INSTALLATION
+
+If your CPAN shell is set up, you should just be able to do
+
+    % perl -MCPAN -e 'install WWW::OpenSearch'
+
+Download it, unpack it, then build it as per the usual:
+
+    % perl Makefile.PL
+    % make && make test
+
+Then install it:
+
+    % make install
+
+Tatsuhiko Miyagawa / miyagawa@cpan.org
+
+
