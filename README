@@ -1,20 +1,40 @@
-WWW::OpenSearch
+NAME
+    WWW::OpenSearch - Search A9 OpenSearch compatible engines
 
-INSTALLATION
+SYNOPSIS
+      use WWW::OpenSearch;
 
-If your CPAN shell is set up, you should just be able to do
+      my $url = "http://bulkfeeds.net/opensearch.xml";
+      my $engine = WWW::OpenSearch->new($url);
 
-    % perl -MCPAN -e 'install WWW::OpenSearch'
+      my $name = $engine->ShortName;
+      my $tags = $engine->Tags;
 
-Download it, unpack it, then build it as per the usual:
+      my $feed = $engine->search("iPod");
+      for my $item (@{$feed->items}) {
+          print $item->{description};
+      }
 
-    % perl Makefile.PL
-    % make && make test
+      # page through page 2 with 20 items in each page
+      # Note that some engines don't allow changing these values
+      $engine->pager->entries_per_page(20);
+      $engine->pager->current_page(2);
+      my $feed = $engine->search("iPod");
 
-Then install it:
+BETA
+    This module is in beta version, which means its API interface and
+    functionalities may be changed in future releases.
 
-    % make install
+DESCRIPTION
+    WWW::OpenSearch is a module to search A9's OpenSearch compatible search
+    engines. See http://opensearch.a9.com/ for details.
 
-Tatsuhiko Miyagawa / miyagawa@cpan.org
+AUTHOR
+    Tatsuhiko Miyagawa <miyagawa@bulknews.net>
 
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+SEE ALSO
+    XML::Simple, XML::RSS, Data::Page, LWP
 
