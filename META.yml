@@ -1,15 +1,15 @@
 # http://module-build.sourceforge.net/META-spec.html
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         WWW-OpenSearch
-version:      0.03
+version:      0.04
 version_from: lib/WWW/OpenSearch.pm
 installdirs:  site
 requires:
     Data::Page:                    2
     LWP:                           5.6
     Test::More:                    0.32
-    XML::RSS:                      1
-    XML::Simple:                   2
+    XML::LibXML:                   1.58
+    XML::RSS::LibXML:              0.05
 
 distribution_type: module
 generated_by: ExtUtils::MakeMaker version 6.27
