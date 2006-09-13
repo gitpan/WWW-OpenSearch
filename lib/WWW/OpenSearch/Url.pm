@@ -1,5 +1,8 @@
 package WWW::OpenSearch::Url;
 
+use strict;
+use warnings;
+
 use base qw( Class::Accessor::Fast );
 
 use URI;
@@ -104,7 +107,7 @@ sub prepare_query {
     # attempt to handle POST
     if( $self->method eq 'post' ) {
         my $post = $self->params;
-        for( keys %macros ) {
+        for( keys %$macros ) {
             $post->{ $macros->{ $_ } } = $params->{ $_ };
         }
         return [ $url, $post ];
