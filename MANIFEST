@@ -7,7 +7,6 @@ lib/WWW/OpenSearch/Response.pm
 lib/WWW/OpenSearch/Url.pm
 Makefile.PL
 MANIFEST			This list of files
-META.yml			Module meta-data (added by MakeMaker)
 README
 t/00_compile.t
 t/01_live.t
@@ -16,3 +15,4 @@ t/11-url.t
 t/12-response.t
 t/98_pod.t
 t/99_pod_coverage.t
+META.yml                                 Module meta-data (added by MakeMaker)
