@@ -1,9 +1,9 @@
 --- #YAML:1.0
 name:                WWW-OpenSearch
-version:             0.10_02
-abstract:            ~
-license:             ~
-generated_by:        ExtUtils::MakeMaker version 6.31
+version:             0.11
+abstract:            Search A9 OpenSearch compatible engines
+license:             perl
+generated_by:        ExtUtils::MakeMaker version 6.32
 distribution_type:   module
 requires:     
     Data::Page:                    2
@@ -17,3 +17,5 @@ requires:
 meta-spec:
     url:     http://module-build.sourceforge.net/META-spec-v1.2.html
     version: 1.2
+author:
+    - Brian Cassidy <bricas@cpan.org>
