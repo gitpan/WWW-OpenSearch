@@ -1,4 +1,15 @@
 Changes
+inc/Module/AutoInstall.pm
+inc/Module/Install.pm
+inc/Module/Install/AutoInstall.pm
+inc/Module/Install/Base.pm
+inc/Module/Install/Can.pm
+inc/Module/Install/Fetch.pm
+inc/Module/Install/Include.pm
+inc/Module/Install/Makefile.pm
+inc/Module/Install/Metadata.pm
+inc/Module/Install/Win32.pm
+inc/Module/Install/WriteAll.pm
 lib/WWW/OpenSearch.pm
 lib/WWW/OpenSearch/Agent.pm
 lib/WWW/OpenSearch/Description.pm
@@ -9,6 +20,7 @@ lib/WWW/OpenSearch/Response.pm
 lib/WWW/OpenSearch/Url.pm
 Makefile.PL
 MANIFEST			This list of files
+META.yml
 README
 t/00_compile.t
 t/01_live.t
@@ -20,4 +32,3 @@ t/13-request.t
 t/98_pod.t
 t/99_pod_coverage.t
 t/data/osd.xml
-META.yml                                 Module meta-data (added by MakeMaker)
