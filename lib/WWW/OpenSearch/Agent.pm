@@ -46,7 +46,7 @@ it under the same terms as Perl itself.
 =cut
 
 sub new {
-    my( $class, @rest ) = @_;
+    my ( $class, @rest ) = @_;
     return $class->SUPER::new(
         agent => join( '/', __PACKAGE__, $WWW::OpenSearch::VERSION ),
         @rest,
@@ -57,7 +57,7 @@ sub new {
 
 sub request {
     my $self     = shift;
-    my $request  = shift; ;
+    my $request  = shift;
     my $response = $self->SUPER::request( $request, @_ );
 
     # allow regular HTTP::Requests to flow through
